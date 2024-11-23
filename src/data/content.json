@@ -1,0 +1,62 @@
+{
+  "hero": {
+    "title": "All-In-One Finance\nDashboard",
+    "subtitle": "Bring your financials in one place to get the big picture.",
+    "buttons": [
+      {
+        "text": "Learn More",
+        "variant": "primary"
+      },
+      {
+        "text": "Buy Now",
+        "variant": "secondary"
+      }
+    ],
+    "image": {
+      "url": "https://framerusercontent.com/images/6Zr3smNhIvtBHD1qusKQcPWz6s.png",
+      "alt": "Finance Dashboard Interface"
+    }
+  },
+  "secondBrain": {
+    "title": "Your Second Brain",
+    "subtitle": "An all-in-one Notion system to organize your tasks, projects, goals, notes, and references.",
+    "buttons": [
+      {
+        "text": "Learn More",
+        "variant": "primary"
+      },
+      {
+        "text": "Buy Now",
+        "variant": "secondary"
+      }
+    ],
+    "image": {
+      "url": "https://framerusercontent.com/images/5pDNplwymRwddqKMKxf4daH0eg.png",
+      "alt": "Second Brain Interface"
+    }
+  },
+  "templates": {
+    "title": "Discover More\nNotion Templates",
+    "subtitle": "Browse more handcrafted Notion templates featured in the official marketplace.",
+    "button": {
+      "text": "Browse All",
+      "variant": "primary"
+    },
+    "image": {
+      "url": "https://framerusercontent.com/images/Qy4HU9eUY7iaBZwlDqX7TiVvaU.png",
+      "alt": "Notion Templates Preview"
+    }
+  },
+  "minimalist": {
+    "title": "Join the minimalist\nmovement.",
+    "subtitle": "Find apps, icons, and wallpapers to turn your devices into minimalist tools.",
+    "button": {
+      "text": "Start Here",
+      "variant": "primary"
+    },
+    "image": {
+      "url": "https://framerusercontent.com/images/edxrKyFZmZtcLPTAar73vnijtQ.png",
+      "alt": "Minimalist App Interface"
+    }
+  }
+}
