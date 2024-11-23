@@ -1,0 +1,43 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Environment variables
+.env
+
+# Build outputs
+dist/
+build/
+out/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE/Editor specific
+.idea/
+.vscode/
+*.swp
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# Coverage reports
+coverage/
+*.lcov
+
+# Debug files
+*.pid
+*.seed
+*.pid.lock
+
+# Specific files to ignore
+yarn.lock
+package-lock.json
