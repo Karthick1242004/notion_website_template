@@ -18,7 +18,7 @@ type AnimationOptions = {
 };
 
 export const useGSAPAnimation = (options: AnimationOptions = {}) => {
-  const elementRef = useRef(null);
+  const elementRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
     const element = elementRef.current;
@@ -67,10 +67,10 @@ export const useGSAPAnimation = (options: AnimationOptions = {}) => {
         break;
       case 'splitText':
         if (element) {
-          const text = element.textContent;
-          element.innerHTML = text
+          const text = (element as HTMLElement).textContent ?? '';
+          (element as HTMLElement).innerHTML = text
             .split('')
-            .map(char => `<span class="inline-block">${char}</span>`)
+            .map((char: string) => `<span class="inline-block">${char}</span>`)
             .join('');
           animation = {
             y: 50,
@@ -81,9 +81,9 @@ export const useGSAPAnimation = (options: AnimationOptions = {}) => {
         break;
     }
 
-    const target = children ? element?.children : 
-                  type === 'splitText' ? element?.children : 
-                  element;
+    const target = children || type === 'splitText' ? element?.children : element;
+
+    if (!target) return;
 
     const tl = gsap.timeline({
       scrollTrigger: {

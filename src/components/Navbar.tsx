@@ -1,11 +1,8 @@
-import React from 'react';
-import { Building2 } from 'lucide-react';
-
 const Navbar = () => {
   return (
     <nav className="py-4 px-6 md:px-12 flex items-center justify-between border-b border-gray-100">
       <div className="flex items-center space-x-2">
-        <Building2 className="w-8 h-8" />
+        <img src="https://framerusercontent.com/images/dvrschHGP374SPK1HpDjWPcdFEk.png?scale-down-to=512" alt="Easlo" className='w-8 h-8 shadow-lg rounded-full' />
         <span className="text-xl font-bold">Easlo</span>
       </div>
       

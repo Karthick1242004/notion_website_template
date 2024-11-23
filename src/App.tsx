@@ -1,5 +1,3 @@
-import React from 'react';
-import { Building2 } from 'lucide-react';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import SecondBrainSection from './components/SecondBrainSection';
@@ -11,15 +9,17 @@ function App() {
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
+      <div className='px-5'>
       <HeroSection />
-      <div className="w-full h-32 bg-gradient-to-b from-white to-gray-50"></div>
-      <div className="bg-gray-50">
-        <SecondBrainSection />
       </div>
-      <div className="bg-white">
+      <div className="w-full h-32 bg-white"></div>
+        <SecondBrainSection />
+      <div className="bg-white px-5">
         <TemplatesSection />
       </div>
+      <div className='px-5'>
       <MinimalistSection />
+      </div>
       <Footer />
     </div>
   );

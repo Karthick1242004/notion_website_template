@@ -51,7 +51,7 @@
     "title": "Join the minimalist\nmovement.",
     "subtitle": "Find apps, icons, and wallpapers to turn your devices into minimalist tools.",
     "button": {
-      "text": "Start Here",
+      "text": "Get Started",
       "variant": "primary"
     },
     "image": {
@@ -60,3 +60,4 @@
     }
   }
 }
+

@@ -1,11 +1,12 @@
-import React from 'react';
 import { Building2, Instagram, Twitter, Youtube } from 'lucide-react';
 import { useGSAPAnimation } from '../hooks/useGSAPAnimation';
 
 const Footer = () => {
-  const brandRef = useGSAPAnimation({ type: 'slide' });
-  const linksRef = useGSAPAnimation({ type: 'fade', children: true, stagger: 0.1 });
-  const copyrightRef = useGSAPAnimation({ type: 'fade', delay: 0.5 });
+  const brandRef = useGSAPAnimation({ type: 'slide' }) as React.RefObject<HTMLDivElement>;
+  const pagesRef = useGSAPAnimation({ type: 'slide' }) as React.RefObject<HTMLDivElement>;
+  const productsRef = useGSAPAnimation({ type: 'slide' }) as React.RefObject<HTMLDivElement>;
+  const infoRef = useGSAPAnimation({ type: 'slide' }) as React.RefObject<HTMLDivElement>;
+  const copyrightRef = useGSAPAnimation({ type: 'slide' }) as React.RefObject<HTMLDivElement>;
 
   return (
     <footer className="bg-white border-t border-gray-100 py-16">
@@ -32,7 +33,7 @@ const Footer = () => {
           </div>
 
           {/* Links Sections */}
-          <div ref={linksRef}>
+          <div ref={pagesRef}>
             <h3 className="font-semibold mb-4">Pages</h3>
             <div className="space-y-3">
               <a href="#" className="block text-gray-600 hover:text-black transition-colors transform hover:translate-x-1">Blog</a>
@@ -41,7 +42,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div ref={linksRef}>
+          <div ref={productsRef}>
             <h3 className="font-semibold mb-4">Products</h3>
             <div className="space-y-3">
               <a href="#" className="block text-gray-600 hover:text-black transition-colors transform hover:translate-x-1">Second Brain</a>
@@ -49,7 +50,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div ref={linksRef}>
+          <div ref={infoRef}>
             <h3 className="font-semibold mb-4">Info</h3>
             <div className="space-y-3">
               <a href="#" className="block text-gray-600 hover:text-black transition-colors transform hover:translate-x-1">Circle Community</a>
